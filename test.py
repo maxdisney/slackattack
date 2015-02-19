@@ -1,4 +1,4 @@
-import slack
+from . import slack
 
 def testUsers():
 	users = slack.users()
