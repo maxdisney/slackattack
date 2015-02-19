@@ -10,6 +10,11 @@ def testChannels():
 	assert 'dma-ios' in channels
 	assert 'dma-ioooooooos' not in channels
 
+def testChannels():
+	groups = slack.groups()
+	assert 'dma-ios-private' in groups
+	assert 'dma-ioooooooos-private' not in groups
+
 def testSharkEmoji():
 	emoji = slack.emoji()
 	assert 'leftshark' in emoji

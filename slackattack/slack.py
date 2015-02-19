@@ -12,6 +12,12 @@ def channels():
 	return [x['name'] for x in response['channels']]
 
 '''
+List groups user has access to Slack
+'''
+def groups():
+	url = 'https://www.slack.com/api/groups.list?token={0}'.format(TOKEN)
+
+'''
 List all registered users
 '''
 def users():
