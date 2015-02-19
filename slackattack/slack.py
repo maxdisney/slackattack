@@ -24,7 +24,8 @@ def users():
 List all emojis and the images they point to
 '''
 def emoji():
-	url = 'https://www.slack.com/api/emoji.list?token={0}'.format(TOKEN)
+	# Test token
+	url = 'https://www.slack.com/api/emoji.list?token=xoxp-2356228633-2758427903-3769369696-b12b48'
 	response = requests.get(url).json()
 	return response['emoji']
 
